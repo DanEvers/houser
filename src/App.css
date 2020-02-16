@@ -44,8 +44,16 @@
   background-color: #8AEA92;
   border: none;
   font-weight: bold;
-  
 }
+
+.dash_subheader_button_cancel {
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  background-color: #fec2c2;
+  border: none;
+  font-weight: bold;
+}
+
 
 .dash_prop_heading {
   display: flex;

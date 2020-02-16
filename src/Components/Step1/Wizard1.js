@@ -66,12 +66,12 @@ export default class Wizard1 extends Component {
         
         <p>
           <Link to="/wizard/step2">
-            <button>Next Step</button>
+            <button className="dash_subheader_button">Next Step</button>
           </Link>
         </p>
         <p>
           <Link to="/">
-            <button>Cancel</button>
+            <button className="dash_subheader_button_cancel">Cancel</button>
           </Link>
         </p>
       </div>

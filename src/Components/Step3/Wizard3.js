@@ -50,12 +50,12 @@ export default class Wizard3 extends Component {
         />
         <p>
           <Link to="/">
-            <button>Complete</button>
+            <button className="dash_subheader_button">Complete</button>
           </Link>
         </p>
         <p>
           <Link to="/">
-            <button>Cancel</button>
+            <button className="dash_subheader_button_cancel">Cancel</button>
           </Link>
         </p>
       </div>
