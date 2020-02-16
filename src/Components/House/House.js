@@ -6,13 +6,18 @@ function House(props) {
 
   return (
     <div className="home_listings">
-      <h2>Home Listings</h2>
-      {img}<br></br>
-      {name}<br></br>
-      {address}<br></br>
-      {city}<br></br>
-      {state}<br></br>
-      {zip}<br></br>
+      {img}
+      <br></br>
+      {name}
+      <br></br>
+      {address}
+      <br></br>
+      {city}
+      <br></br>
+      {state}
+      <br></br>
+      {zip}
+      <br></br>
     </div>
   );
 }

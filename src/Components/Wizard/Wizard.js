@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import '../../App.css'
 // import store from '../../store'
 
-export class Wizard extends Component {
+export default class Wizard extends Component {
   constructor() {
     super();
 
@@ -13,9 +13,8 @@ export class Wizard extends Component {
       city: "",
       state: "",
       zip: "",
-      img: "",
-      mortgage: "",
-      rent: ""
+      // mortgage: "",
+      // rent: ""
     };
   }
 
@@ -65,21 +64,12 @@ export class Wizard extends Component {
           value={this.state.zip}
           onChange={e => this.handleChange(e, "zip")}
         />
-        <h5>Image:</h5>
-        <input
-          value={this.state.image}
-          onChange={e => this.handleChange(e, "image")}
-        />
-        <h5>Mortgage:</h5>
-        <input
-          value={this.state.mortgage}
-          onChange={e => this.handleChange(e, "mortgage")}
-        />
-        <h5>Rent:</h5>
-        <input
-          value={this.state.rent}
-          onChange={e => this.handleChange(e, "rent")}
-        />
+   
+        <p>
+          <Link to="/Wizard2">
+            <button>Next Step</button>
+          </Link>
+        </p>
         <p>
           <Link to="/">
             <button>Cancel</button>
@@ -89,5 +79,3 @@ export class Wizard extends Component {
     );
   }
 }
-
-export default Wizard;

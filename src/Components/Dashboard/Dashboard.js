@@ -54,11 +54,13 @@ class Dashboard extends Component {
             <h2>Dashboard</h2>
           </div>
         </div>
+
         <Link to="/wizard/step1">
           <button className="dash_subheader_button">Add New Property</button>
         </Link>
+
         <div className="dash_prop_container">
-          <h3 className="dash_prop_heading">Home Listings</h3>
+          <h3 className="dash_prop_heading">House Listings:</h3>
           <div className="House">
             <div className="house_detail_box">{houseList}</div>
           </div>

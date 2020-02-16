@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 import '../../App.css'
 import store from '../../store'
 
-export class Wizard1 extends Component {
+export default class Wizard1 extends Component {
   constructor() {
     super();
-    const reduxState = store.getState();
+    // const reduxState = store.getState();
 
     this.state = {
-      name: reduxState.name,
-      address: reduxState.address,
-      city: reduxState.city,
-      state: reduxState.state,
-      zip: reduxState.zip,
+      // name: reduxState.name,
+      // address: reduxState.address,
+      // city: reduxState.city,
+      // state: reduxState.state,
+      // zip: reduxState.zip,
     };
   }
 
@@ -37,7 +37,7 @@ export class Wizard1 extends Component {
   render() {
     return (
       <div>
-        Wizard
+        Wizard - Step 1
         <h5>Property Name:</h5>
         <input
           value={this.state.name}
@@ -63,21 +63,12 @@ export class Wizard1 extends Component {
           value={this.state.zipcode}
           onChange={e => this.handleChange(e, "zipcode")}
         />
-        <h5>Image:</h5>
-        <input
-          value={this.state.image}
-          onChange={e => this.handleChange(e, "image")}
-        />
-        <h5>Mortgage:</h5>
-        <input
-          value={this.state.mortgage}
-          onChange={e => this.handleChange(e, "mortgage")}
-        />
-        <h5>Rent:</h5>
-        <input
-          value={this.state.rent}
-          onChange={e => this.handleChange(e, "rent")}
-        />
+        
+        <p>
+          <Link to="/wizard/step2">
+            <button>Next Step</button>
+          </Link>
+        </p>
         <p>
           <Link to="/">
             <button>Cancel</button>
@@ -87,5 +78,3 @@ export class Wizard1 extends Component {
     );
   }
 }
-
-export default Wizard;

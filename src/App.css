@@ -14,8 +14,15 @@
   }
 }
 
-.home_listings{
+.home_listings {
   background-color: #e5f4ec;
+}
+
+.dash_heading > h2 {
+  margin: 0px;
+  padding: 10px 0px 10px 25px;
+  display: flex;
+  justify-content: left
 }
 
 .dash {
@@ -28,6 +35,24 @@
   margin: 0 auto;
 }
 
+.dash_subheader_button {
+  /* display: flex; */
+  /* justify-content: right; */
+  /* align-items: flex-end; */
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background-color: #8AEA92;
+  border: none;
+  font-weight: bold;
+  
+}
+
+.dash_prop_heading {
+  display: flex;
+  justify-content: left;
+  padding: 10px 0px 10px 25px
+}
+
 .header {
   background-color: #519872;
   font-size: 25px;
@@ -37,7 +62,7 @@
   font-weight: bolder;
 }
 
-/* .App-header {
+.App-header {
   background-color: red;
   min-height: 100vh;
   display: flex;
@@ -46,7 +71,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-} */
+}
 
 .App-link {
   color: #61dafb;
